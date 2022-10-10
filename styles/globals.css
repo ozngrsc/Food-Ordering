@@ -20,5 +20,14 @@ body {
 }
 
 
+.slick-dots {
+  @apply !flex justify-start items-center;
+}
+
+.slick-dots .slick-active div{
+  @apply bg-primary border-none;
+}
+
+
 
 
