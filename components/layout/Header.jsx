@@ -11,8 +11,6 @@ const Header = () => {
 
   const router = useRouter();
 
-  console.log(router);
-
   return (
     <div
       className={`h-[5.5rem] z-50 relative w-full ${
