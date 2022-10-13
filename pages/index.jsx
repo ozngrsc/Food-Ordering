@@ -19,9 +19,6 @@ export default function Index() {
       </Head>
       <Header />
       <Home />
-      <div className="p-20 container mx-auto">
-        <Input />
-      </div>
     </div>
   );
 }
