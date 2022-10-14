@@ -17,7 +17,7 @@ const MenuWrapper = () => {
           <button className="px-6 py-2 rounded-3xl">Fries</button>
         </div>
       </div>
-      <div className="mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+      <div className="mt-8 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 min-h-[450px]">
         <MenuItem />
         <MenuItem />
         <MenuItem />
