@@ -2,10 +2,10 @@ import React from "react";
 import Input from "../../components/form/Input";
 import Title from "../../components/ui/Title";
 import { useFormik } from "formik";
-import { loginSchema } from "../../schema/loginSchema";
+import { adminSchema } from "../../schema/adminSchema";
 import Link from "next/link";
 
-const Login = () => {
+const Index = () => {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 4000));
     actions.resetForm();
@@ -14,22 +14,22 @@ const Login = () => {
   const { values, errors, touched, handleSubmit, handleChange, handleBlur } =
     useFormik({
       initialValues: {
-        email: "",
+        username: "",
         password: "",
       },
       onSubmit,
-      validationSchema: loginSchema,
+      validationSchema: adminSchema,
     });
 
   const inputs = [
     {
       id: 1,
-      name: "email",
-      type: "email",
-      placeholder: "Your E-mail Address",
-      value: values.email,
-      errorMessage: errors.email,
-      touched: touched.email,
+      name: "username",
+      type: "text",
+      placeholder: "Your Username",
+      value: values.username,
+      errorMessage: errors.username,
+      touched: touched.username,
     },
     {
       id: 2,
@@ -43,12 +43,12 @@ const Login = () => {
   ];
 
   return (
-    <div className="container mx-auto pb-96">
+    <div className="container mx-auto py-48">
       <form
         className="flex flex-col items-center my-20 md:w-1/2 w-full mx-auto"
         onSubmit={handleSubmit}
       >
-        <Title className="text-[40px] mb-6">Login</Title>
+        <Title className="text-[40px] mb-6">Admin Login</Title>
         <div className="flex flex-col gap-y-3 w-full">
           {inputs.map((input) => (
             <Input
@@ -61,12 +61,9 @@ const Login = () => {
         </div>
         <div className="flex flex-col w-full gap-y-3 mt-6">
           <button className="btn-primary">Login</button>
-          <button className="btn-primary !bg-secondary">
-            <i className="fa-brands fa-github mr-2"></i>GitHub
-          </button>
-          <Link href="/auth/register">
+          <Link href="/">
             <span className="text-[14px] underline text-secondary cursor-pointer">
-              Do you not have an account?
+              Home Page
             </span>
           </Link>
         </div>
@@ -75,4 +72,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Index;

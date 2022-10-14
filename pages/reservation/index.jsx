@@ -3,7 +3,7 @@ import Reservation from "../../components/Reservation";
 
 const Index = () => {
   return (
-    <div>
+    <div className="py-36">
       <Reservation />
     </div>
   );
