@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Title from "../ui/Title";
 
@@ -24,7 +25,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:flex-1">
-            <Title className="text-3xl">Feane</Title>
+            <Title className="text-3xl">
+              <Link href="/">Feane</Link>
+            </Title>
             <p className="mt-3">
               Necessary, making this the first true generator on the Internet.
               It uses a dictionary of over 200 Latin words, combined with

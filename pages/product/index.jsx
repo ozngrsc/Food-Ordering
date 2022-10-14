@@ -1,12 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import Header from "../../components/layout/Header";
 import Title from "../../components/ui/Title";
 
 const Index = () => {
   return (
     <div>
-      <Header />
       <div className="flex items-center h-screen md:gap-20 gap-1 py-20 flex-wrap">
         <div className="relative md:flex-1 w-[80%] h-[80%] mx-20">
           <Image

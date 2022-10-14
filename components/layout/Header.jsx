@@ -4,6 +4,7 @@ import { FaUserAlt, FaShoppingCart, FaSearch } from "react-icons/fa";
 import { GiHamburgerMenu, GiCancel } from "react-icons/gi";
 import Search from "../ui/Search";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Header = () => {
   const [isSearchModal, setIsSearchModal] = useState(false);
@@ -26,16 +27,16 @@ const Header = () => {
         >
           <ul className="flex gap-x-6 sm:flex-row flex-col items-center">
             <li className="px-[5px] py-[10px] hover:text-primary cursor-pointer">
-              <a href="">HOME</a>
+              <Link href="/">HOME</Link>
             </li>
             <li className="px-[5px] py-[10px] hover:text-primary cursor-pointer">
-              <a href="">MENU</a>
+              <Link href="/menu">MENU</Link>
             </li>
             <li className="px-[5px] py-[10px] hover:text-primary cursor-pointer">
-              <a href="">ABOUT</a>
+              <Link href="/about">ABOUT</Link>
             </li>
             <li className="px-[5px] py-[10px] hover:text-primary cursor-pointer">
-              <a href="">BOOK TABLE</a>
+              <Link href="/reservation">BOOK TABLE</Link>
             </li>
           </ul>
           {isMenuModal && (
