@@ -11,15 +11,15 @@ const Footer = () => {
             <Title className="text-3xl">Contact Us</Title>
             <div className="flex flex-col gap-y-2 mt-3">
               <div className=" hover:text-primary cursor-pointer">
-                <i class="fa-solid fa-location-dot"></i>
+                <i className="fa-solid fa-location-dot"></i>
                 <span className="inline-block ml-2">Location</span>
               </div>
               <div className=" hover:text-primary cursor-pointer">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
                 <span className="inline-block ml-2">Call +01 1234567890</span>
               </div>
               <div className=" hover:text-primary cursor-pointer">
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
                 <span className="inline-block ml-2">demo@gmail.com</span>
               </div>
             </div>
