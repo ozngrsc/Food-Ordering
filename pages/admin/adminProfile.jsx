@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Product from "../../components/admin/Product";
 import Account from "../../components/profile/Account";
-import Order from "../../components/profile/Order";
+import Order from "../../components/admin/Order";
 import Password from "../../components/profile/Password";
 
 const Profile = () => {
@@ -37,7 +37,7 @@ const Profile = () => {
             }`}
             onClick={() => setTabs(1)}
           >
-            <i className="fa fa-key"></i>
+            <i className="fa fa-motorcycle"></i>
             <button className="ml-2">Orders</button>
           </li>
           <li
@@ -46,7 +46,7 @@ const Profile = () => {
             }`}
             onClick={() => setTabs(2)}
           >
-            <i className="fa fa-motorcycle"></i>
+            <i className="fa fa-ellipsis-h"></i>
             <button className="ml-2">Categories</button>
           </li>
           <li
@@ -55,7 +55,7 @@ const Profile = () => {
             }`}
             onClick={() => setTabs(3)}
           >
-            <i className="fa fa-motorcycle"></i>
+            <i className="fa fa-window-maximize"></i>
             <button className="ml-2">Footer</button>
           </li>
           <li
@@ -70,8 +70,8 @@ const Profile = () => {
         </ul>
       </div>
       {tabs === 0 && <Product />}
-      {tabs === 1 && <Password />}
-      {tabs === 2 && <Order />}
+      {tabs === 1 && <Order />}
+      {tabs === 2 && <Product />}
     </div>
   );
 };
