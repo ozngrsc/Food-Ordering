@@ -94,7 +94,7 @@ const Account = () => {
           />
         ))}
       </div>
-      <button className="btn-primary mt-4 mb-4">Update</button>
+      <button className="btn-primary mt-4 ">Update</button>
     </form>
   );
 };
