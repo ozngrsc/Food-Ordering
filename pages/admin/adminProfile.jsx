@@ -4,6 +4,7 @@ import Product from "../../components/admin/Product";
 import Account from "../../components/profile/Account";
 import Order from "../../components/admin/Order";
 import Password from "../../components/profile/Password";
+import Category from "../../components/admin/Category";
 
 const Profile = () => {
   const [tabs, setTabs] = useState(0);
@@ -71,7 +72,7 @@ const Profile = () => {
       </div>
       {tabs === 0 && <Product />}
       {tabs === 1 && <Order />}
-      {tabs === 2 && <Product />}
+      {tabs === 2 && <Category />}
     </div>
   );
 };

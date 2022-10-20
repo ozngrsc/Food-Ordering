@@ -42,7 +42,7 @@ const Product = () => {
                 $20
               </td>
               <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                <button className=" text-white px-[10px] py-[8px] rounded-md bg-red-600 cursor-pointer transition-all hover:bg-red-800 ">
+                <button className=" text-white px-[10px] py-[8px] rounded-md bg-danger cursor-pointer transition-all hover:bg-red-600 ">
                   Delete
                 </button>
               </td>
